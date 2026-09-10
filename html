@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Missão: Grão-Pará</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container">
+            <h1>🌿 Missão: Grão-Pará</h1>
+            <p>Você acaba de chegar ao Grão-Pará!</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="introducao">
+            <h2>🧭 Sua missão</h2>
+
+            <p>
+                Você acaba de chegar ao antigo Grão-Pará.
+                Será capaz de identificar os elementos históricos,
+                culturais e sociais dessa região?
+            </p>
+
+            <p>
+                Responda às perguntas e teste seus conhecimentos!
+                Cada resposta correta vale <strong>1 ponto</strong>.
+            </p>
+
+            <button id="btn-iniciar" class="botao">
+                Começar missão 🚀
+            </button>
+        </section>
+
+
+        <section id="quiz" class="quiz escondido">
+
+            <div class="barra-info">
+                <span id="numero-pergunta">Pergunta 1</span>
+                <span id="pontuacao">Pontos: 0</span>
+            </div>
+
+            <div class="barra-progresso">
+                <div id="progresso"></div>
+            </div>
+
+            <div class="pergunta-card">
+
+                <h2 id="pergunta"></h2>
+
+                <div id="alternativas"></div>
+
+                <p id="feedback"></p>
+
+                <button id="btn-proxima" class="botao escondido">
+                    Próxima pergunta →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section id="resultado" class="resultado escondido">
+
+            <h2>🏆 Missão concluída!</h2>
+
+            <p id="mensagem-final"></p>
+
+            <div class="pontuacao-final">
+                <span id="resultado-pontos">0</span>
+                <small>pontos</small>
+            </div>
+
+            <button id="btn-reiniciar" class="botao">
+                Jogar novamente 🔄
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Projeto educativo — Missão Grão-Pará</p>
+    </footer>
+
+
+    <script src="script.js"></script>
